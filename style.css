@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-template-areas: 'logo btn-try'
+}
+
+.wrapper-header{
+    grid-area: logo;
+}
+#btn-try{
+    width: 5rem;
+    justify-self:end;
+    grid-area: btn-try;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img{
+    width: 80px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid black;
+    width: 100%;
+    /* padding: 5rem; */
+}
+
+.container.grow{
+    background-image: url(assets/bg-section-top-desktop-1.svg), url(assets/bg-section-bottom-desktop-1.svg);
+    background-repeat:no-repeat, no-repeat;
+    background-position: top, bottom ;
+    background-size: 100%, 100%;
+    height: 40rem;
+    position: relative;
+}
+
+.container.grow .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.bg-curve {
+    z-index: -1;
+    background-color: hsl(207, 100%, 98%);
+    width: 100%;
+    height: 65%;
+    position: absolute; 
+    top: 8rem;
+}
+
+.container.grow h2, .container.grow p{
+    margin: 0 10rem 0 10rem;
+}
+
+.container.grow img{
+
+    width: 25rem;
+    height: 25rem;
+    margin-right: 80px;
+}
+
+.container-flow{
+
+}
+.container-user{
+
+}

@@ -5,26 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap"
+        rel="stylesheet">
     <title>huddle-landing-page-with-curved-sections-master</title>
 </head>
 
 <body>
     <header>
         <div class="wrapper-header">
-            <img src="assets/logo.svg" alt="logo">
+            <img id="logo-img" src="assets/logo.svg" alt="logo">
         </div>
         <button id="btn-try">Try it Free</button>
     </header>
     <main>
-        <h2>
-            Build The Community Your Fans Will Love
-        </h2>
-        <p>
-            Huddle re-imagines the way we build communities. You have a voice, but so does
-            your audience. Create connections with your users as you engage in genuine discussion.
-        </p>
-        <button>Get Started For Free</button>
-        <img src="assets/screen-mockups.svg" alt="screen-mockups">
+        <div class="container mock">
+            <div class="wrap">
+                <h2>
+                    Build The Community Your Fans Will Love
+                </h2>
+                <p>
+                    Huddle re-imagines the way we build communities. You have a voice, but so does
+                    your audience. Create connections with your users as you engage in genuine discussion.
+                </p>
+                <button class="btn-start">Get Started For Free</button>
+            </div>
+            <img src="assets/screen-mockups.svg" alt="screen-mockups">
+        </div>
         <div class="container communities">
             <div class="wrap">
                 <img src="assets/icon-communities.svg" alt="icon-communities">
@@ -37,7 +46,7 @@
                 <p>Messages Sent</p>
             </div>
         </div>
-        <div class="container grow">
+        <div class="container grow bg">
             <div class="bg-curve"></div>
             <div class="para">
                 <h2>Grow Together</h2>
@@ -46,10 +55,11 @@
                     Think of the insightful conversations you miss out on with a feedback form.
                 </p>
             </div>
-            <img src="assets/illustration-grow-together.svg" alt="illustration-grow-together">
+            <img id="illustration" src="assets/illustration-grow-together.svg" alt="illustration-grow-together">
         </div>
-        <div class="container flow">
-            <img src="assets/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation">
+        <div class="container bg flow">
+            <img id="illustration" src="assets/illustration-flowing-conversation.svg"
+                alt="illustration-flowing-conversation">
             <div class="para">
                 <h2>Flowing Conversations</h2>
                 <p>
@@ -58,7 +68,9 @@
                 </p>
             </div>
         </div>
-        <div class="container user">
+        <div class="container user bg">
+            <div class="bg-curve"></div>
+
             <div class="para">
                 <h2>Your Users</h2>
                 <p>
@@ -66,45 +78,51 @@
                     once signed in to your app, your users can start chatting immediately.
                 </p>
             </div>
-            <img src="assets/illustration-your-users.svg" alt="illustration-your-users">
+            <img id="illustration" src="assets/illustration-your-users.svg" alt="illustration-your-users">
         </div>
-        <div class="container">
-            <div class="wrap"></div>
+        <div class="container ready">
+            <div class="para">
+                <h2>Ready To Build Your Community?</h2>
+                <button class="btn-start">Get Started For Free</button>
+            </div>
         </div>
 
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container bg footer">
+            <div class="bg-curve"></div>
+
             <div class="wrapper-header">
-                <img src="assets/logo.svg" alt="logo">
+                <img id="footer-logo" src="assets/logo.svg" alt="logo">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
                     vestibulum a, ultrices quis sem.
                 </p>
 
                 <div id="wrap-num">
-                    <img src="" alt="">
+                    <img class="icons" src="assets/icon-phone.svg" alt="phone-icon">
                     <p>Phone: +1-543-123-4567</p>
                 </div>
                 <div id="wrap-email">
-                    <img src="" alt="">
+                    <img class="icons" src="assets/icon-email.svg" alt="email-icon">
                     <p>example@huddle.com</p>
                 </div>
                 <div class="wrap-icons">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                    <img src="assets/facebook.png" alt="facebook-icon">
+                    <img src="assets/instagram.png" alt="instagram-icon">
+                    <img src="assets/twitter.png" alt="twitter-icon">
 
                 </div>
             </div>
 
             <div class="wrap">
-                <h2></h2>
-                <p></p>
+                <h2>Newsletter</h2>
+                <p>To recieve tips on how to grow your community, sign up to our weekly
+                    newsletter. We’ll never send you spam or pass on your email address</p>
                 <form>
                     <input type="text">
-                    <button>Subscribe</button>
+                    <button id="btn-sub">Subscribe</button>
                 </form>
             </div>
         </div>
